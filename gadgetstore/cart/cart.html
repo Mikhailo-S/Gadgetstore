@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик покупок</title>
+    <link rel="stylesheet" href="stile.css">
+<script src="cart.js"></script>
+</head>
+<body>
+   <h1>Магазин</h1>
+    <div class="product-list">
+        <div class="product">
+            <img src="phone1.jpg" alt="Phone 1">
+            <h3>Phone 1</h3>
+            <p class="price">669,00 $</p>
+            <button onclick="addToCart('Phone 1', 669)">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="phone2.jpg" alt="Phone 2">
+            <h3>Phone 2</h3>
+            <p class="price">549,00 $</p>
+            <button onclick="addToCart('Phone 2', 549)">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="phone3.jpg" alt="Phone 3">
+            <h3>Phone 3</h3>
+            <p class="price">499,00 $</p>
+            <button onclick="addToCart('Phone 3', 499)">Додати до кошика</button>
+        </div>
+    </div>
+
+    <h2>Ваш кошик</h2>
+    <div class="cart" id="cart">
+        <p>Кошик порожній</p>
+    </div>
+</body>
+</html>
